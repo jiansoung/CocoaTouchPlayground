@@ -12,9 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var inputTextField: UITextField!
 
+    private var datePicker: UIDatePicker?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .date
+        inputTextField.inputView = datePicker
     }
 
 
