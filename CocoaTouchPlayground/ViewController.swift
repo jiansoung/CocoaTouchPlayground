@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         datePicker?.datePickerMode = .date
         datePicker?.addTarget(self, action: #selector(dateChanged(datePicker:)), for: .valueChanged)
 
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
+
         inputTextField.inputView = datePicker
     }
 
@@ -28,6 +31,10 @@ class ViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         inputTextField.text = dateFormatter.string(from: datePicker.date)
+    }
+
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 
 }
