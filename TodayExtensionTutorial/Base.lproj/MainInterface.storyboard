@@ -38,6 +38,7 @@
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="RVY-GE-afU" secondAttribute="bottom" constant="8" id="YkL-jY-OHR"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="t0L-QN-kWv" secondAttribute="bottom" constant="8" id="ZJP-ym-AdK"/>
                             <constraint firstItem="t0L-QN-kWv" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="i4G-Wd-0zW"/>
+                            <constraint firstItem="RVY-GE-afU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t0L-QN-kWv" secondAttribute="trailing" constant="8" symbolic="YES" id="nJN-Qg-xhy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
