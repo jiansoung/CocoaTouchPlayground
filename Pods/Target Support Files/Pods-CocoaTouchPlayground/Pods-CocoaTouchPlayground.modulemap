@@ -1,0 +1,6 @@
+framework module Pods_CocoaTouchPlayground {
+  umbrella header "Pods-CocoaTouchPlayground-umbrella.h"
+
+  export *
+  module * { export * }
+}

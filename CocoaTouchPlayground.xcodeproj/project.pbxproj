@@ -12,6 +12,7 @@
 		0C0BC5A221B76A580042C4E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0BC5A021B76A580042C4E5 /* Main.storyboard */; };
 		0C0BC5A421B76A5A0042C4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0BC5A321B76A5A0042C4E5 /* Assets.xcassets */; };
 		0C0BC5A721B76A5A0042C4E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0BC5A521B76A5A0042C4E5 /* LaunchScreen.storyboard */; };
+		C6A8B324A29A193241F91C1A /* Pods_CocoaTouchPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDC9F553AB2A393C0CA6BBD /* Pods_CocoaTouchPlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0C0BC5A321B76A5A0042C4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C0BC5A621B76A5A0042C4E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C0BC5A821B76A5A0042C4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDC9F553AB2A393C0CA6BBD /* Pods_CocoaTouchPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaTouchPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBBC0251E2788CE7B738FD7 /* Pods-CocoaTouchPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaTouchPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaTouchPlayground/Pods-CocoaTouchPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		E133804EC257C061A14684BC /* Pods-CocoaTouchPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaTouchPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaTouchPlayground/Pods-CocoaTouchPlayground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A8B324A29A193241F91C1A /* Pods_CocoaTouchPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0C0BC59B21B76A580042C4E5 /* CocoaTouchPlayground */,
 				0C0BC59A21B76A580042C4E5 /* Products */,
+				64D9A8C3B5D8D8E7858C04A0 /* Pods */,
+				D30625FB2B7A0212AEB20EE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = CocoaTouchPlayground;
 			sourceTree = "<group>";
 		};
+		64D9A8C3B5D8D8E7858C04A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEBBC0251E2788CE7B738FD7 /* Pods-CocoaTouchPlayground.debug.xcconfig */,
+				E133804EC257C061A14684BC /* Pods-CocoaTouchPlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D30625FB2B7A0212AEB20EE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FDC9F553AB2A393C0CA6BBD /* Pods_CocoaTouchPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C0BC5AB21B76A5A0042C4E5 /* Build configuration list for PBXNativeTarget "CocoaTouchPlayground" */;
 			buildPhases = (
+				610D1F8BE68B3AC8EDD0B805 /* [CP] Check Pods Manifest.lock */,
 				0C0BC59521B76A580042C4E5 /* Sources */,
 				0C0BC59621B76A580042C4E5 /* Frameworks */,
 				0C0BC59721B76A580042C4E5 /* Resources */,
+				36637E09C036D95E6C1CF55F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36637E09C036D95E6C1CF55F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CocoaTouchPlayground/Pods-CocoaTouchPlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaTouchPlayground/Pods-CocoaTouchPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		610D1F8BE68B3AC8EDD0B805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaTouchPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C0BC59521B76A580042C4E5 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		0C0BC5AC21B76A5A0042C4E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBBC0251E2788CE7B738FD7 /* Pods-CocoaTouchPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		0C0BC5AD21B76A5A0042C4E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E133804EC257C061A14684BC /* Pods-CocoaTouchPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
